@@ -1,0 +1,39 @@
+{
+  "tours": [
+    {
+      "id": 2,
+      "name": "Hạ Long - Cát Bà 2N1D",
+      "destination": "Hạ Long",
+      "duration": "2 ngày 1 đêm",
+      "price": 1800000,
+      "image": "https://picsum.photos/400/300?random=2",
+      "description": "Du thuyền vịnh Hạ Long - Kỳ quan thiên nhiên thế giới",
+      "available": 10,
+      "active": false
+    },
+    {
+      "name": "Hàn Quốc",
+      "destination": "Busan-Hq",
+      "duration": "5N4D",
+      "price": 50000000,
+      "image": "https://tse4.mm.bing.net/th/id/OIP.lYxc3rOQT6XBGOOWICsvsgHaEK?pid=Api&P=0&h=220",
+      "description": "",
+      "available": 2,
+      "category": "Tour Quốc tế",
+      "active": true,
+      "id": 3
+    },
+    {
+      "name": "Nhật Bản",
+      "destination": "Hokkaido",
+      "duration": "6N5D",
+      "price": 29000000,
+      "image": "https://tse3.mm.bing.net/th/id/OIP.4lI8mI5xV1rEGvkZjxOthwHaE6?pid=Api&P=0&h=220",
+      "description": "Đào củ sen Hokkaido",
+      "available": 88,
+      "category": "Tour Quốc tế",
+      "active": true,
+      "id": 4
+    }
+  ]
+}
