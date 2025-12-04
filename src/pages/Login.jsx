@@ -3,7 +3,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
-function RegisterPage() {
+function LoginPage() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -11,20 +11,24 @@ function RegisterPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3000/register", {
+      const res = await axios.post("http://localhost:3000/login", {
         email,
         password,
       });
-      toast.success("Đăng ký thành công!");
-      navigate("/login");
+
+      // Lưu token vào localStorage
+      localStorage.setItem("token", res.data.accessToken);
+
+      toast.success("Đăng nhập thành công!");
+      navigate("/");
     } catch (error) {
-      toast.error("Đăng ký thất bại!");
+      toast.error("Sai tài khoản hoặc mật khẩu!");
     }
   };
 
   return (
     <div className="p-6 max-w-md mx-auto">
-      <h1 className="text-2xl font-semibold mb-6">Đăng ký</h1>
+      <h1 className="text-2xl font-semibold mb-6">Đăng nhập</h1>
       <form className="space-y-4" onSubmit={handleSubmit}>
         <input
           value={email}
@@ -44,13 +48,13 @@ function RegisterPage() {
         />
         <button
           type="submit"
-          className="bg-green-600 text-white px-4 py-2 rounded w-full"
+          className="bg-blue-600 text-white px-4 py-2 rounded w-full"
         >
-          Đăng ký
+          Đăng nhập
         </button>
       </form>
     </div>
   );
 }
 
-export default RegisterPage;
+export default LoginPage;

@@ -8,32 +8,30 @@
       "price": 1800000,
       "image": "https://picsum.photos/400/300?random=2",
       "description": "Du thuyền vịnh Hạ Long - Kỳ quan thiên nhiên thế giới",
-      "available": 10,
-      "active": false
+      "available": 20
     },
     {
-      "name": "Hàn Quốc",
-      "destination": "Busan-Hq",
-      "duration": "5N4D",
-      "price": 50000000,
-      "image": "https://tse4.mm.bing.net/th/id/OIP.lYxc3rOQT6XBGOOWICsvsgHaEK?pid=Api&P=0&h=220",
-      "description": "",
-      "available": 2,
-      "category": "Tour Quốc tế",
-      "active": true,
-      "id": 3
+      "id": 3,
+      "name": "Đà Lạt 4N3D",
+      "destination": "Đà Lạt",
+      "duration": "4 ngày 3 đêm",
+      "price": 3200000,
+      "image": "https://picsum.photos/400/300?random=3",
+      "description": "Thành phố ngàn hoa với khí hậu mát mẻ quanh năm",
+      "available": 10
     },
     {
-      "name": "Nhật Bản",
-      "destination": "Hokkaido",
-      "duration": "6N5D",
-      "price": 29000000,
-      "image": "https://tse3.mm.bing.net/th/id/OIP.4lI8mI5xV1rEGvkZjxOthwHaE6?pid=Api&P=0&h=220",
-      "description": "Đào củ sen Hokkaido",
-      "available": 88,
-      "category": "Tour Quốc tế",
-      "active": true,
-      "id": 4
+      "name": "ha long",
+      "price": 1111,
+      "category": "Tour Noi dia",
+      "id": 15
+    }
+  ],
+  "users": [
+    {
+      "email": "vanh77@gmail.com",
+      "password": "$2a$10$SvT8FUXpvAmP.Wa7j2RBzufECqSzWK6RgMCJqvvo7sUNqq4IzIIRS",
+      "id": 1
     }
   ]
 }
