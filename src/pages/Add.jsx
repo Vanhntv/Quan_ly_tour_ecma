@@ -30,7 +30,7 @@ function AddPage() {
         active,
       });
       toast.success("Thêm tour thành công!");
-      navigate("/");
+      navigate("/list");
     } catch (error) {
       toast.error(error.message);
     }
@@ -73,12 +73,6 @@ function AddPage() {
           placeholder="URL ảnh"
           value={image}
           onChange={(e) => setImage(e.target.value)}
-          className="border w-full p-2 rounded"
-        />
-        <textarea
-          placeholder="Mô tả"
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
           className="border w-full p-2 rounded"
         />
         <input

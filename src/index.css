@@ -1,1 +1,29 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+.switch {
+  width: 42px;
+  height: 22px;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.switch::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: 0.25s;
+}
+.switch.on {
+  background: #4ade80; /* xanh */
+}
+.switch.on::after {
+  left: 22px;
+}
+.switch.off {
+  background: #9ca3af; /* xám */
+}

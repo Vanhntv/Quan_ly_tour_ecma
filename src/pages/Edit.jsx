@@ -52,7 +52,7 @@ function EditPage() {
         available: Number(form.available),
       });
       confirm("Cập nhật tour thành công!");
-      navigate("/");
+      navigate("/list");
     } catch (error) {
       toast.error(error.message);
     }
@@ -102,13 +102,7 @@ function EditPage() {
           onChange={handleChange}
           className="border w-full p-2 rounded"
         />
-        <textarea
-          name="description"
-          placeholder="Mô tả"
-          value={form.description}
-          onChange={handleChange}
-          className="border w-full p-2 rounded"
-        />
+
         <input
           type="number"
           name="available"
