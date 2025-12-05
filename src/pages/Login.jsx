@@ -16,7 +16,6 @@ function LoginPage() {
         password,
       });
 
-      // Lưu token vào localStorage
       localStorage.setItem("token", res.data.accessToken);
 
       toast.success("Đăng nhập thành công!");

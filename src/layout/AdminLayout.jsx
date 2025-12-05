@@ -1,10 +1,11 @@
 import { Navigate, Outlet } from "react-router-dom";
 
 const AdminLayout = () => {
+  // check login hay chua
+  // token trong localstorage
   const token = localStorage.getItem("token");
   if (!token) return <Navigate to="/login" />;
 
-  // Parse user từ localStorage
   const userData = JSON.parse(localStorage.getItem("user") || "{}");
 
   const handleLogout = () => {
@@ -15,7 +16,6 @@ const AdminLayout = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
-      {/* TOP NAV */}
       <header className="bg-blue-600 text-white px-6 py-3 flex justify-between items-center">
         <h1 className="text-xl font-semibold">Xin chào, {userData.email}</h1>
 

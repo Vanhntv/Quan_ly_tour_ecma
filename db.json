@@ -1,17 +1,6 @@
 {
   "tours": [
     {
-      "id": 3,
-      "name": "Đà Lạt 4N3D",
-      "destination": "Đà Lạt",
-      "duration": "4 ngày 3 đêm",
-      "price": 3200000,
-      "image": "https://picsum.photos/400/300?random=3",
-      "description": "Thành phố ngàn hoa với khí hậu mát mẻ quanh năm",
-      "available": 10,
-      "active": true
-    },
-    {
       "name": "Nhật Bản",
       "destination": "Hokkaido",
       "duration": "7N6D",
@@ -20,7 +9,7 @@
       "description": "Đào củ sen ở Hokkaido",
       "available": 100,
       "category": "Tour Quốc tế",
-      "active": true,
+      "active": false,
       "id": 4
     },
     {
@@ -44,8 +33,32 @@
       "description": "",
       "available": 20,
       "category": "Tour Nội địa",
-      "active": true,
+      "active": false,
       "id": 6
+    },
+    {
+      "name": "Thượng Hải",
+      "destination": "Trung Quốc",
+      "duration": "3N2D",
+      "price": 15000000,
+      "image": "https://kimlientravel.com.vn/upload/image/Bai-tin-TQ/thuong-hai/ben-thuong-hai.jpg",
+      "description": "",
+      "available": 15,
+      "category": "Tour Quốc tế",
+      "active": true,
+      "id": 7
+    },
+    {
+      "name": "Tam Đảo",
+      "destination": "Vĩnh Phúc",
+      "duration": "2N1D",
+      "price": 6000000,
+      "image": "https://wyndham-thanhthuy.com/wp-content/uploads/2024/12/du-lich-tam-dao-1-ngay-1.jpg",
+      "description": "",
+      "available": 8,
+      "category": "Tour Nội địa",
+      "active": true,
+      "id": 8
     }
   ],
   "users": [
