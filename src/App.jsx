@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       {/* HEADER - Navbar Tailwind */}
-      <nav className="bg-blue-600 text-white shadow">
+      <nav className="bg-pink-400 text-white shadow">
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
           {/* Brand */}
           <a href="#" className="text-xl font-semibold">
@@ -32,10 +32,10 @@ function App() {
 
           {/* Right menu desktop */}
           <div className="hidden md:flex items-center space-x-6">
-            <a href="#" className="hover:text-gray-200">
+            <a href="/login" className="hover:text-gray-200">
               Đăng nhập
             </a>
-            <a href="#" className="hover:text-gray-200">
+            <a href="/register" className="hover:text-gray-200">
               Đăng ký
             </a>
           </div>

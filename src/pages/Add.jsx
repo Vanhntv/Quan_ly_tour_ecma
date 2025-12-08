@@ -96,7 +96,7 @@ function AddPage() {
             checked={active}
             onChange={(e) => setActive(e.target.checked)}
           />
-          <label>Kích hoạt</label>
+          <label>active</label>
         </div>
         <button
           type="submit"

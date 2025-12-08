@@ -59,6 +59,18 @@
       "category": "Tour Nội địa",
       "active": true,
       "id": 8
+    },
+    {
+      "name": "Seoul - Đảo Nami - Công viên Lotte World - Tháp Namsan",
+      "destination": "Hàn Quốc",
+      "duration": "6N5D",
+      "price": 26000000,
+      "image": "https://s3-cmc.travel.com.vn/vtv-image/Images/Tour/tfd__0_12454_mua-thu-han-quoc.webp",
+      "description": "",
+      "available": 18,
+      "category": "Tour Quốc tế",
+      "active": false,
+      "id": 9
     }
   ],
   "users": [
@@ -66,6 +78,11 @@
       "email": "vanh77@gmail.com",
       "password": "$2a$10$SvT8FUXpvAmP.Wa7j2RBzufECqSzWK6RgMCJqvvo7sUNqq4IzIIRS",
       "id": 1
+    },
+    {
+      "email": "admin01@gmail.com",
+      "password": "$2a$10$xGQCIRdZpJHGZZ7dCgqAX.WQwIsKTKK44d0oC8cbXJDMaYfelc1ki",
+      "id": 2
     }
   ]
 }

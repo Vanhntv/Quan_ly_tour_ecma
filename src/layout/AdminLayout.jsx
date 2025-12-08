@@ -1,12 +1,11 @@
 import { Navigate, Outlet } from "react-router-dom";
 
 const AdminLayout = () => {
-  // check login hay chua
-  // token trong localstorage
   const token = localStorage.getItem("token");
   if (!token) return <Navigate to="/login" />;
 
-  const userData = JSON.parse(localStorage.getItem("user") || "{}");
+  const res = localStorage.getItem("user");
+  const data = JSON.parse(res);
 
   const handleLogout = () => {
     localStorage.removeItem("token");
@@ -16,12 +15,12 @@ const AdminLayout = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
-      <header className="bg-blue-600 text-white px-6 py-3 flex justify-between items-center">
-        <h1 className="text-xl font-semibold">Xin chào, {userData.email}</h1>
+      <header className="bg-pink-400 text-white px-6 py-3 flex justify-between items-center">
+        <h1 className="text-xl font-semibold">Xin chào, {data.email}</h1>
 
         <button
           onClick={handleLogout}
-          className="bg-red-500 px-3 py-1 rounded hover:bg-red-600"
+          className="bg-pink-600 px-3 py-1 rounded hover:bg-pink-700"
         >
           Đăng xuất
         </button>

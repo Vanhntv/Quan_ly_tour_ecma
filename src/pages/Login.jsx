@@ -17,9 +17,10 @@ function LoginPage() {
       });
 
       localStorage.setItem("token", res.data.accessToken);
+      localStorage.setItem("user", JSON.stringify(res.data.user));
 
       toast.success("Đăng nhập thành công!");
-      navigate("/");
+      navigate("/list");
     } catch (error) {
       toast.error("Sai tài khoản hoặc mật khẩu!");
     }
@@ -47,7 +48,7 @@ function LoginPage() {
         />
         <button
           type="submit"
-          className="bg-blue-600 text-white px-4 py-2 rounded w-full"
+          className="bg-pink-400 text-white px-4 py-2 rounded w-full"
         >
           Đăng nhập
         </button>
